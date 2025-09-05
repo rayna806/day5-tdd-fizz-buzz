@@ -13,7 +13,7 @@ public class FizzBuzzTest {
 
     }
     @Test
-    public void should_return_1_when_input_2(){
+    public void should_return_2_when_input_2(){
         int order = 2;
         String word = FizzBuzz.countOff(order);
         assertEquals("2",word);
@@ -27,5 +27,18 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz",word);
 
     }
+    @Test
+    public void should_return_Fizz_when_input_3(){
+        int order = 3;
+        String word = FizzBuzz.countOff(order);
+        assertEquals("Fizz",word);
 
+    }
+    @Test
+    public void should_return_Buzz_when_input_5(){
+        int order = 5;
+        String word = FizzBuzz.countOff(order);
+        assertEquals("Buzz",word);
+
+    }
 }
