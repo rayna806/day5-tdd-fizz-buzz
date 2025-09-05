@@ -21,7 +21,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_FizzBuzz_when_input_mutipleof3and5(){
+    public void should_return_FizzBuzz_when_input_multiple_of3and5(){
         int order = 15;
         String word = FizzBuzz.countOff(order);
         assertEquals("FizzBuzz",word);
