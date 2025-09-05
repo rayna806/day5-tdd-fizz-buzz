@@ -8,13 +8,15 @@ public class FizzBuzz {
     }
 
     private static String ifMutipleOf3or5(int order) {
-        if (order % 3 == 0 && order % 5 == 0) {
+        boolean isMultipleOf3 = order % 3 == 0;
+        boolean isMultipleOf5 = order % 5 == 0;
+        if (isMultipleOf3 && isMultipleOf5) {
             return "FizzBuzz";
         } 
-        else if (order % 3 == 0){
+        else if (isMultipleOf3){
             return "Fizz";
         }
-        else if(order % 5 == 0){
+        else if(isMultipleOf5){
             return "Buzz";
         }
         return null;
